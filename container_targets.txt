@@ -1,1 +1,1 @@
-GET http://147.102.13.62:32751?image_path=/app/images/sample.jpg
+GET http://147.102.13.62:31397/?image_path=/app/images/sample.jpg
