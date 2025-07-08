@@ -24,4 +24,3 @@ EXPOSE 8080
 
 # Run the Flask application
 CMD ["python", "-u", "app.py"]
-
