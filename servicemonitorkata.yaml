@@ -13,6 +13,6 @@ spec:
     matchLabels:
       app: image-processing-kata  # ← Targets kata service
   endpoints:
-  - interval: 30s
+  - interval: 10s
     port: web
     path: /metrics
