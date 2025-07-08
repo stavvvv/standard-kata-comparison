@@ -13,6 +13,6 @@ spec:
     matchLabels:
       app: image-processing-container
   endpoints:
-  - interval: 30s
+  - interval: 10s
     port: web
     path: /metrics
