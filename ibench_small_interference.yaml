@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ibench-small
+  labels:
+    app: ibench-small
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ibench-small
+  template:
+    metadata:
+      labels:
+        app: ibench-small
+    spec:
+      containers:
+      - name: ibench-cpu
+        image: stav1212/ibench:latest
+        command: ["./cpu"]
+        args: ["7200"]  
+        resources:
+          requests:
+            cpu: "500m"     
+            memory: "256Mi"
+          limits:
+            cpu: "500m"      
+            memory: "256Mi"  
